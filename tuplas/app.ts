@@ -21,11 +21,12 @@
 // console.log(pessoas);
 
 type Nome = 
-|[nome: string]
-|[nome: string, sobrenome: string]
+        [nome: string] 
+        |
+        [nome: string, sobrenome: string]
 
-function nomear(nome: Nome): string[] {
+function nomear(...nome: Nome): string[] {
     return [...nome];
 }
 
-console.log(nomear);
+console.log(nomear('joao'));

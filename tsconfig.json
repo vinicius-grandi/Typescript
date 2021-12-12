@@ -1,11 +1,16 @@
 {
-  "compilerOptions": {    
-    "target": "es2016",
-    "useDefineForClassFields": true,
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "CommonJS",
+    "lib": ["ESNext", "DOM"],
+    "outDir": "./dist",
+    "removeComments": true,
+    "noEmitOnError": true,
     "strict": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
-  }
+    "forceConsistentCasingInFileNames": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+  },
 }
