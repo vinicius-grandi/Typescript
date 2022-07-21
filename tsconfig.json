@@ -4,6 +4,8 @@
     "module": "CommonJS",
     "lib": ["ESNext", "DOM"],
     "outDir": "./dist",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "removeComments": true,
     "noEmitOnError": true,
     "strict": true,
