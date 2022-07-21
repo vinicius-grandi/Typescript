@@ -29,7 +29,7 @@ abstract class Piece {
     private readonly color: Color,
     files: Files,
     ranks: Ranks
-    ) 
+    )
     {
         this.position = new Position(files, ranks)
     }
@@ -45,12 +45,12 @@ class Position {
     constructor(
         private files: Files,
         private ranks: Ranks,
-    ) 
+    )
         {
 
         }
 
-    distanceFrom(position: Position) 
+    distanceFrom(position: Position)
     {
         return {
             ranks: Math.abs(position.ranks - this.ranks),
