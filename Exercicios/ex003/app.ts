@@ -5,14 +5,14 @@ type Reserve = {
     (from: Date, destination: string): Reservation
     (destination: string): Reservation
 }
-   
+
 
 let reserve: Reserve = (
     fromOrDestination: Date | string,
     toOrDestination?: Date | string,
     destination?: string
    ): Reservation => {
-    
+
     if(typeof fromOrDestination === 'string') {
     // Book a trip right away
     }
@@ -23,3 +23,5 @@ let reserve: Reserve = (
     }
     return Reservation
 }
+
+export {};

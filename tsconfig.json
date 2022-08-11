@@ -1,18 +1,26 @@
 {
   "compilerOptions": {
-    "target": "ES2019",
-    "module": "CommonJS",
-    "lib": ["ESNext", "DOM"],
-    "outDir": "./dist",
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "removeComments": true,
-    "noEmitOnError": true,
+    "lib": ["ESNext"],
+    // Target latest version of ECMAScript.
+    "target": "ESNext",
+    // Search under node_modules for non-relative imports.
+    "moduleResolution": "node",
+    "useDefineForClassFields": true,
+    // Process & infer types from .js files.
+    "allowJs": true,
+    // Don't emit; allow Babel to transform files.
+    "noEmit": true,
+    // Enable strictest settings like strictNullChecks & noImplicitAny.
     "strict": true,
+    // Import non-ES modules as default imports.
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "strictNullChecks": true,
-    "noImplicitThis": true,
+    // Ensure that .d.ts files are created by tsc, but not .js files
+    "declaration": true,
+    // "emitDeclarationOnly": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    // Ensure that Babel can safely transpile files in the TypeScript project
+    "isolatedModules": true
   },
+  "exclude": ["./node_modules", "./dist"]
 }

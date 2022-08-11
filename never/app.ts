@@ -1,5 +1,5 @@
-function error(message: string): never {
+function err(message: string): never {
     throw new Error(message);
 }
 
-console.log(error('Erro de Mensagem - 01'));
+console.log(err('Erro de Mensagem - 01'));

@@ -1,9 +1,9 @@
-const laminas: string[] = ['Espada', 'Facão', 'Kunai'];
-const laminas2: Array<string> = ['Peixeira', 'Faca de pão', 'Katana'];
+const lm: string[] = ['Espada', 'Facão', 'Kunai'];
+const lm2: Array<string> = ['Peixeira', 'Faca de pão', 'Katana'];
 
-laminas.push(...laminas2);
-console.log(laminas.length)
+lm.push(...lm2);
+console.log(lm.length)
 
-for(const i of laminas) {
+for(const i of lm) {
     console.log(i)
 }
