@@ -3,6 +3,7 @@
     "lib": ["ESNext"],
     // Target latest version of ECMAScript.
     "target": "ESNext",
+    "module": "ESNext",
     // Search under node_modules for non-relative imports.
     "moduleResolution": "node",
     "useDefineForClassFields": true,
@@ -20,7 +21,8 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     // Ensure that Babel can safely transpile files in the TypeScript project
-    "isolatedModules": true
+    "isolatedModules": false
   },
+  "include": ["./webpack"],
   "exclude": ["./node_modules", "./dist"]
 }

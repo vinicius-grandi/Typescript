@@ -1,0 +1,6 @@
+{
+    "watch": ["webpack"],
+    "ext": "ts,json",
+    "ignore": ["src/**/*.spec.ts"],
+    "exec": "npm run build:js"
+}
